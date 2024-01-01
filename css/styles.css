@@ -1088,6 +1088,7 @@ input:focus + label > span {
     justify-content: center;
     align-items: center;
     border: none;
+    background-color: #fff;
 }
 
 .menu-socials-list {
