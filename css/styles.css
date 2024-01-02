@@ -102,18 +102,13 @@ img {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1157.97px) {
-    .header-list {
-        margin-right: 121px;
-    }
-}
-
 a {
     text-decoration: none;
 }
 
 .header-con {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -173,10 +168,9 @@ a {
 @media screen and (min-width: 768px) and (max-width: 1157.97px) {
     .address-list {
         flex-wrap: wrap;
+        flex-direction: column;
         gap: 12px;
-        padding-top: 16px;
-        padding-right: 16px;
-        padding-bottom: 16px;
+        padding: 0;
     }
     
 }
@@ -198,24 +192,42 @@ a {
     background-color: #2e2f42;
     max-width: 1440px;
     padding: 72px 0;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-officeM.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin: 0 auto;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-resolution: 192dpi) {
     .section-one {
-        padding-top: 112px;
-        padding-bottom: 36px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/people-officeM2x.jpg);
     }
 }
 
-@media screen and (min-width: 1158px) {
+@media only screen and (min-width: 768px) {
     .section-one {
-        padding-top: 188px;
-        padding-bottom: 188px;
+        padding: 112px 0;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/people-officeT.jpg);
+    }
+}
+
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .section-one {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/people-officeT2x.jpg);
+    }
+}
+
+@media only screen and (min-width: 1158px) {
+    .section-one {
+        padding: 188px 0;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    }
+}
+
+@media only screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+    .section-one {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/people-office2x.jpg);
     }
 }
 
@@ -343,6 +355,7 @@ a {
 
 .header-three.mob-head {
     text-align: center;
+    font-weight: 700;
     font-size: 36px;
     letter-spacing: 0.72px;
 }
@@ -350,6 +363,7 @@ a {
 @media screen and (min-width: 1158px) {
     .header-three.mob-head {
         text-align: left;
+        font-weight: 500;
         font-size: 20px;
     }
 }
@@ -496,7 +510,7 @@ a {
 
 @media screen and (min-width: 1158px) {
     .products {
-        width: calc((100% - 2 * 48px) / 3);
+        width: calc((100% - 2 * 24px) / 3);
     }
 }
 
@@ -551,6 +565,20 @@ a {
     letter-spacing: 0.32px;
 }
 
+.pagetext-adv {
+    color:#434455;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+}
+
+@media screen and (min-width: 1158px) {
+    .pagetext-adv {
+        font-weight: 400;
+    }
+}
+
 .logo {
     color: #4D5AE5;
     font-family: Raleway, sans-serif;
@@ -576,10 +604,6 @@ a {
 
 .footercolor {
     background: #2E2F42;
-    padding-top: 96px;
-    padding-right: 16px;
-    padding-bottom: 96px;
-    padding-left: 16px;
 }
 
 @media screen and (max-width: 767.97px) {
@@ -590,8 +614,8 @@ a {
 
 @media screen and (min-width: 768px) and (max-width: 1157.97px) {
     .footercolor {
-        padding-right: 108px ;
-        padding-left: 108px;
+        padding-right: 92px ;
+        padding-left: 92px;
     }
 }
 
@@ -615,6 +639,7 @@ a {
     .boxfooter {
         display: flex;
         align-items: baseline;
+        gap: 0;
     }
 }
 
@@ -1139,23 +1164,5 @@ input:focus + label > span {
 @media screen and (min-width: 768px) {
     .menu-button {
         display: none;
-    }
-}
-
-@media screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px), screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
-    .dark-bg {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
-    }
-}
-
-@media screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px), screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
-    .dark-bg {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
-    }
-}
-
-@media screen and (min-resolution: 192dpi) and (min-width: 1158px), screen and (min-resolution: 2dppx) and (min-width: 1158px), screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
-    .dark-bg {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     }
 }
